@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe Check Quiz 🌈</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#vibe-check">Vibe Check</a></li>
+        </ul>
+    </nav>
+
+    <h1>✨ Vibe Check Quiz ✨</h1>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to the Vibe Check Quiz!</h2>
+        <section id="image-scroll">
+            <div id="image-scroll-wrapper">
+                <div class="image-container">
+                    <img src="image1.jpeg" alt="Image 1">
+                    <p class="image-name">Nature Muse (calm) </p>
+                </div>
+                <div class="image-container">
+                    <img src="image2.jpeg" alt="Image 2">
+                    <p class="image-name">Rebel Darkness</p>
+                </div>
+                <div class="image-container">
+                    <img src="image3.jpeg" alt="Image 3">
+                    <p class="image-name">Y2K (fun)</p>
+                </div>
+                <div class="image-container">
+                    <img src="image4.jpeg" alt="Image 4">
+                    <p class="image-name">Futuristic/Techie (clean)</p>
+                </div>
+                <div class="image-container">
+                    <img src="image5.jpeg" alt="Image 5">
+                    <p class="image-name">Soft/Whimsical (Dreamy, Romantic Vibe)</p>
+                </div>
+                <div class="image-container">
+                    <img src="image6.jpeg" alt="Image 6">
+                    <p class="image-name">Minimalist (Calm, Clean Aesthetic)</p>
+                </div>
+                <div class="image-container">
+                    <img src="image7.jpeg" alt="Image 7">
+                    <p class="image-name">Cosmic (Mystical, Space-Inspired)</p>
+                </div>
+                <div class="image-container">
+                    <img src="image8.jpeg" alt="Image 8">
+                    <p class="image-name">Vintage ✨ (Nostalgic, Old-School)</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About This Quiz</h2>
+        <p>Welcome to the "Vibe Check Quiz" – a fun way to discover your aesthetic vibe based on your choices! 🌈✨</p>
+        <p>Ever wondered what your aesthetic says about you? Well, you're in the right place! This quiz was created to
+            help you uncover the vibes that represent your personality and style. Whether you're vibing with the earthy
+            tones of Nature Muse 🍄, rocking a Grunge look 🖤, or living in the fabulous Y2K era 💅, we got you!</p>
+
+        <h3>How It Works</h3>
+        <p>It's super easy! Just answer three questions about your favorite aesthetic, color palette, and ideal weekend
+            activities. Based on your answers, we'll give you a vibe that matches your personality. 🌟</p>
+
+        <h3>Why Take This Quiz?</h3>
+        <p>This quiz isn't just for fun – it's about embracing who you are! The results will show you what kind of vibe
+            you're currently giving and help you express it through your fashion, mood, and lifestyle. 😎</p>
+
+        <h3>Share Your Vibe!</h3>
+        <p>Once you know your vibe, share it with your friends! Take screenshots or share your results on social media.
+            Don't forget to tag us on Instagram or TikTok to let us know your vibe – we love to see it! 🎉</p>
+
+        <h3>Take a Peek at Our Playlist</h3>
+        <p>While you're here, check out the <a href="#vibe-check">Spotify playlist</a> that matches your vibe! Feel free
+            to vibe out to the tunes while you explore your aesthetic further. 🎶</p>
+
+        <h3>More Fun Quizzes Coming Soon!</h3>
+        <p>We're always coming up with new ways to check your vibe! Keep an eye out for more quizzes and features to
+            help you express your inner self.</p>
+
+        <p>Thanks for taking the Vibe Check Quiz! 🌈 We hope you found your vibe, and we can't wait to see you rock it!
+        </p>
+    </section>
+
+    <!-- Vibe Check Section -->
+    <section id="vibe-check">
+        <div class="quiz" id="quiz">
+            <div class="question" id="q1">
+                <p>1. What's your aesthetic?</p>
+                <button class="choice-btn" data-question="0" data-value="0">Nature Muse 🍄</button>
+                <button class="choice-btn" data-question="0" data-value="1">Grunge 🖤</button>
+                <button class="choice-btn" data-question="0" data-value="2">Y2K 💅</button>
+            </div>
+
+            <div class="question" id="q2">
+                <p>2. Pick a color palette:</p>
+                <button class="choice-btn" data-question="1" data-value="0">Earthy greens + browns</button>
+                <button class="choice-btn" data-question="1" data-value="1">Black, red, purple</button>
+                <button class="choice-btn" data-question="1" data-value="2">Pink, chrome, glitter</button>
+            </div>
+
+            <div class="question" id="q3">
+                <p>3. Your ideal weekend?</p>
+                <button class="choice-btn" data-question="2" data-value="0">Picnic in a field 🌻</button>
+                <button class="choice-btn" data-question="2" data-value="1">Late night coding + sad songs 😩</button>
+                <button class="choice-btn" data-question="2" data-value="2">Thrifting & selfies 💖</button>
+            </div>
+            
+            <button id="submit">Get My Vibe 🎯</button>
+            
+            <!-- Result Section -->
+            <div class="result" id="result" style="display: none;">
+                <!-- Result will be displayed here -->
+            </div>
+        <button id="backBtn" style="display: none;">Back</button>
+    </section>
